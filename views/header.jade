@@ -1,0 +1,28 @@
+header
+    ul
+        li.header-tit
+            span Summer的个人博客
+        li.header-nav
+            span
+                a.head-active(href='/#home') Home
+            span
+                a(href='/#article') Article
+            span
+                a(href='/#demo') Demo
+            span
+                a(href='/#about') About
+        li.header-log
+
+           if head.img
+             span.head-user
+                i.user-img
+                    img(src=head.img)
+                i.user-name #{head.name}
+           else
+             span.head-user
+               i.user-img
+                 img(src="../images/normal-head.png")
+               i.user-name 未登录
+             span#home_login Sign In
+
+

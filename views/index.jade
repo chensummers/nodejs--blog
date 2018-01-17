@@ -1,0 +1,68 @@
+extends layout
+
+block content
+  //include header.jade
+  main.main.fc
+    div.main-left.fl
+      div.main-box.main-article
+        ul.main-tit.fc
+          li Article
+          li.art-filter.fr
+            span(data-type=0).active All
+            span(data-type=1) Html
+            span(data-type=2) Css
+            span(data-type=3) JS
+            span(data-type=4) Node
+        div.main-art-box
+          each item,index in art_data
+            div.main-art
+              h2
+               a(href='/article?id=' + item._id.toString())=item.title
+              p
+                case (item.type)
+                  when 1
+                    span.art-tag.art-tag-h Html
+                  when 2
+                    span.art-tag.art-tag-c Css
+                  when 3
+                    span.art-tag.art-tag-j JS
+                  when 4
+                    span.art-tag.art-tag-n Node
+                 span.art-time=item.time
+                 span.art-num 阅读(#{item.read_num})
+     //
+      div.main-box.main-demo
+        ul.main-tit.fc
+          li.main-box-tit Demo
+        ul.main-demo-list
+          li
+            span.main-demo-con
+              img(src='images/footer2.png')
+            span.main-demo-tit 这是案例
+          li
+            span.main-demo-con
+              img(src='images/footer2.png')
+            span.main-demo-tit 这是案例
+          li
+            span.main-demo-con
+              img(src='images/footer2.png')
+            span.main-demo-tit 这是案例
+          li
+            span.main-demo-con
+              img(src='images/footer2.png')
+            span.main-demo-tit 这是案例
+          li
+            span.main-demo-con
+              img(src='images/footer2.png')
+            span.main-demo-tit 这是案例
+      div.main-box.main-about
+        ul.main-tit.fc
+          li.main-box-tit About
+    div.main-right.fr
+ //
+  div.main-mask
+    div.mask-content
+      span.mask-cancle x
+  //include footer.jade
+
+

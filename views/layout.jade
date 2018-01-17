@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no")
+    meta(name="Keywords" content="html,css,js,ecs6,node,express,blog,博客,mongodb,mongoose,nodejs开发博客系统")
+    meta(name="Description" content="html,js,css学习笔记,node+express+mongo 开发个人博客系统,该博客主要功能目前有," +
+        "登录,注册,评论,阅读排行,文章筛选,后期会加上demo案例分享以及游客留言,作者回复等功能;该博客也讲述博主的小白成长历程,一些学习心得,日常笔记,以及项目中踩的坑")
+    meta(name="Author" content="summer")
+    title summer blog
+    link(rel="shortcut icon" type="image/x-icon" href="/images/1.jpeg")
+    link(rel='stylesheet', href='/stylesheets/header.css')
+    link(rel='stylesheet', href='/stylesheets/footer.css')
+    link(rel='stylesheet', href='/stylesheets/home.css')
+    link(rel='stylesheet', href='/stylesheets/article.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src="pub_js/jq.3.2.1.js")
+    script(src="javascripts/home.js")
+  body
+    include header.jade
+    block content
+    include footer.jade
+
+
+
+
+
+

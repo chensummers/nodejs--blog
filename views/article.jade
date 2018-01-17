@@ -1,0 +1,60 @@
+extends layout
+
+block content
+  //include header.jade
+  script(src='javascripts/article_comment.js')
+  main.main.fc
+    article.fl
+        div.art-top
+            h1=data.title
+            p.art-des
+                i published by #{data.time}
+        div.art-content!=data.content
+            p.art-con-num
+                span
+                    i 已被阅读 #{data.read_num} 次
+
+    aside.rank.fr
+        h2
+            span 文章排行榜
+        ul
+            each item,index in listArr
+                li.fc
+                    case index
+                        when 0
+                            span.rank-tag.rank-tag1=index+1 + '.'
+                        when 1
+                            span.rank-tag.rank-tag2=index + 1 + '.'
+                        default
+                            span.rank-tag=index + 1 + '.'
+                    a(href='/article?id=' + item._id)=item.title
+                    span.rank-num.fr 阅读(#{item.read_num})
+
+    aside.comment.fl
+        div.com-opera
+            h2 评论
+            div.com-inp-box
+                p.com-inp
+                    span.com-inp-img
+                        img(src="../images/normal-head.png")
+                    span.com-inp-txt
+                        textarea(placeholder='点评一下呗' id='com-input')
+                p.com-btn
+                    button.com-sub#com-btn Submit
+                    button.com-log#com-login LogIn
+    aside.comment.fl
+        div
+            h2 评论区
+        each item,index in comment
+            ul.fc
+                li.com-inp-img.fl
+                    img(src=item.head_img)
+                li.fl
+                    span.com-name #{item.name}
+                        em #{item.time}
+                    span.com-text #{item.content}
+
+  //include footer.jade
+
+
+

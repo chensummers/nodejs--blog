@@ -1,0 +1,50 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no")
+    meta(name="Keywords" content="html,css,js,ecs6,node,express,blog,博客,mongodb,mongoose,nodejs开发博客系统")
+    meta(name="Description" content="html,js,css学习笔记,node+express+mongo 开发个人博客系统,该博客主要功能目前有," +
+    "登录,注册,评论,阅读排行,文章筛选,后期会加上demo案例分享以及游客留言,作者回复等功能;该博客也讲述博主的小白成长历程,一些学习心得,日常笔记,以及项目中踩的坑")
+    meta(name="Author" content="summer")
+    link(rel="shortcut icon" type="image/x-icon" href="/images/1.jpeg")
+    title summer blog
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/login.css')
+
+body
+  div.login-wrap
+    ul.login.login-home
+      li
+        p.login-img
+          img(src='images/1.jpeg')
+      li
+        h2 Login In
+      li
+        label
+          input#log-name.login-user(type='text' placeholder='请输入用户名')
+      li
+        label
+          input#log-psw.login-psw(type='password' placeholder='请输入密码')
+      li
+        button#login-btn.login-btn Log  In
+      li
+        span.register-btn Register
+
+
+    ul.login.register
+       li
+         p.login-img
+             img(src='images/1.jpeg')
+         li
+            h2 Join Us
+         li
+            label
+               input#reg-name.login-user(type='text' placeholder='请输入用户名')
+         li
+            label
+               input#reg-psw.login-psw(type='password' placeholder='请输入密码')
+         li
+            button#register-btn.login-btn Register
+    script(src="pub_js/jq.3.2.1.js")
+    script(src="javascripts/logo.js")

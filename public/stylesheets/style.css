@@ -1,0 +1,85 @@
+*{
+  margin:0;
+  padding:0;
+}
+ul li{
+  list-style:none;
+}
+html{
+  /*font-size: 12px;*/
+  font-family: -apple-system,PingFang SC,Hiragino Sans GB,Arial,Microsoft YaHei,Helvetica Neue,sans-serif;
+  word-break: break-word;
+  text-rendering: optimizeLegibility;
+  color: #333;
+  background-color: #f4f5f5;
+}
+html,body{
+  width:100%;
+  height:100%;
+}
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #71777c;
+  cursor:pointer;
+  text-decoration: none;
+}
+
+.fc{
+  overflow: auto;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.t-c{
+  text-align: center;
+}
+.t-r{
+  text-align: right;
+}
+.t-l{
+  text-align: left;
+}
+.f-14{
+  font-size: 1rem;
+  line-height: 1.1rem;
+}
+.f-16{
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+}
+.f-20{
+  font-size: 1.4rem;
+  font-size: 2rem;
+}
+.f-24{
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
+.f-28{
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+}
+
+@media screen and (min-width:1500px){
+    header ul{
+        width:60%;
+    }
+    .main{
+      width:60%;
+    }
+
+}
+@media screen and (min-width: 960px) and (max-width: 1300px) {
+    header ul{
+        width:80%;
+    }
+    .main{
+        width:80%;
+    }
+}

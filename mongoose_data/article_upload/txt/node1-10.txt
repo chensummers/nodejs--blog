@@ -1,0 +1,66 @@
+<div class="art-con-div">
+		<h2 class="art-con-tit">一. 环境搭建</h2>
+		<ul class="art-con-ul">
+			<li>nodejs</li>
+			<li>express</li>
+			<li>mongodb(使用mongoose)</li>
+			<li>服务器端(linux)
+				<ul class="art-con-ul">
+					<li>在官网下载node和mongodb 通过tar -zxvf 解压缩即可</li>
+					<li>apt install mongo-clients</li>
+					<li>apt install mongo-serve</li>
+					<li>apt install screen</li>
+					<li>apt install tree</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="art-con-div">
+		<h2 class="art-con-tit">三. 文章上传</h2>
+		<ul class="art-con-ul">
+			<li>mongodb数据库命令
+				<ul class="art-con-ul">
+					<li>show dbs //数据库表</li>
+					<li>use xxx //打开表</li>
+					<li>show collections //表集合</li>
+					<li>db.xxx.find() //查看表数据</li>
+					<li>db.xxx.insert({Object}) //写入数据</li>
+					<li>db.xxx.drop() //清空表</li>
+					<li>db.dropDatabase() //删除表</li>
+					<li>db.xxx.remove({}) //删除表中的某条数据</li>
+					<li>db.xxx.find().sort({num:1}) //排序 -1&amp;1</li>
+					<li>db.xxx.find().limt(num) //读取固定数据量</li>
+					<li>db.xxx.find().skip(num) //跳过固定数量的数据</li>
+				</ul>
+			</li>
+			<li>linux命令行学习(常用命令)
+				<ul class="art-con-ul">
+					  <li>cd .. //返回上一级</li>
+ 						<li>cd /  //返回根目录</li>
+ 						<li>ls   //当前目录的文件列表</li>
+ 						<li>tree //当前文件树状展示(apt install tree)</li>
+ 						<li>find -name xxx //查找文件</li>
+ 						<li>mkdir xxx //新建文件</li>
+ 						<li>rm -r xxx //移除文件</li>
+ 						<li>mv a /b  &amp;&amp;  mv a b  //移动文件或改文件名(a=>b)</li>
+ 						<li>cat xxx //concatnate显示文件内容(或将几个文件合并)</li>
+				</ul>
+			</li>
+			<li>linux-screen 进程管理
+				<ul class="art-con-ul">
+					<li>screen -ls //进程列表</li>
+					<li>screen -S xxx //新建xxx进程</li>
+					<li>screen -r xxx //启用xxx进程</li>
+					<li>切换屏幕 ctrl+ a + d</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="art-con-div">
+		<p class="art-con-tit">ps:</p>
+		<ul class="art-con-ul">
+			<li>nodejs --version //查看版本</li>
+			<li>nodejs xxx  //运行文件</li>
+			<li>在这次blog项目中基本上就用到了以上的命令,一些高级命令还没有使用到,后期会整理些其他常用的命令,现在主要是为了项目才去学习.本章主要是梳理命令行,当然了,在搭建云服务器时,踩的坑蛮多的,建议刚开始用云服务器的小伙伴,不要安装太多的软件和环境,不然出问题不好找,够自己项目使用就行了,也可以格式化云服务器(/哭脸)</li>
+			<li>非常感谢在踩坑时提供帮助的朋友们(^ ^~).</li>
+		</ul>

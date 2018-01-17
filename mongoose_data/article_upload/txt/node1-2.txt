@@ -1,0 +1,46 @@
+<div class="art-con-div">
+		<h2 class="art-con-tit">一. 项目准备</h2>
+		<ul class="art-con-ul">
+			<li>工具webstrom</li>
+			<li>安装node环境</li>
+			<li>安装MongoDB数据库</li>
+			<li>安装mongoose模块安装</li>
+		</ul>
+	</div>
+	<div class="art-con-div">
+		<h2 class="art-con-tit">二. 登录注册</h2>
+		<ul class="art-con-ul">
+			<li>ajax实现前后端登陆数据交互</li>
+			<li>结合数据库的登陆操作</li>
+			<li>注册功能以及用户检测功能</li>
+			<li>登陆注册日志文件写入</li>
+			<li>session保存登陆状态</li>
+		</ul>
+	</div>
+	<div class="art-con-div">
+		<h2 class="art-con-tit">三. 文章上传</h2>
+		<ul class="art-con-ul">
+			<li>文章数据库创建，上传功能模块</li>
+			<li>文章获取排序</li>
+			<li>文章渲染到前台jade模块功能运用</li>
+			<li>文章浏览次数功能实现，数据库数据更新</li>
+		</ul>
+	</div>
+	<div class="art-con-div">
+		<h2 class="art-con-tit">四. 文章评论</h2>
+		<ul class="art-con-ul">
+			<li>评论登陆检测</li>
+			<li>评论数据库设计</li>
+			<li>评论数据上传，数据库保存</li>
+			<li>评论数据获取，及页面展示</li>
+		</ul>
+	</div>
+	<div class="art-con-div">
+		<p class="art-con-tit">ps:</p> 
+		<ul class="art-con-ul">
+			<li>这次使用的模板是jade,自己额外花了点时间把jade的语法看了,中间因为语法问题各种渲染错误,虽然坑有点小多,但代码看起来相当的简洁,减少代码冗余,很有美感</li>
+			<li>在这一次项目中,第一次听说了回调黑洞,还好node模块里有async,可以很好的处理回调黑洞问题,代码也不会一直嵌套下去</li>
+			<li>这是自己第一次写blog,希望自己可以养成记录学习的习惯,不断充实自己,加油,菜鸟不学,连鸟都做不成了</li>
+			
+		</ul>
+	</div>
